@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        /* Basic Reset */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header-container {
+            background-color: #333; /* Dark background */
+            color: white; /* White text */
+            padding: 10px; /* Padding inside the header */
+            text-align: center; /* Center text */
+        }
+
+        /* Navigation Bar */
+        .navigation-bar {
+            background-color: #444; /* Slightly lighter dark background */
+            color: white; /* White text */
+            padding: 10px; /* Padding inside the nav */
+        }
+
+        .navigation-bar ul {
+            list-style-type: none; /* Remove bullets */
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+            text-align: center; /* Center align items */
+        }
+
+        .navigation-bar ul li {
+            display: inline; /* Inline list items */
+            margin-right: 10px; /* Space between items */
+        }
+
+        .navigation-bar ul li a {
+            color: white; /* White text */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .navigation-bar ul li a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        /* Main Content Area */
+        .main-content {
+            display: flex; /* Flexbox layout */
+            padding: 20px; /* Padding inside the content area */
+        }
+
+        .article {
+            flex: 3; /* Main content takes 3 parts of the flex container */
+            background-color: #f4f4f4; /* Light grey background */
+            padding: 10px; /* Padding inside the article */
+            border: 1px solid #ddd; /* Light border */
+            margin-right: 10px; /* Space between article and sidebar */
+        }
+
+        .sidebar {
+            flex: 1; /* Sidebar takes 1 part of the flex container */
+            background-color: #f4f4f4; /* Light grey background */
+            padding: 10px; /* Padding inside the sidebar */
+            border: 1px solid #ddd; /* Light border */
+        }
+
+        /* Footer */
+        .footer-container {
+            background-color: #333; /* Dark background */
+            color: white; /* White text */
+            padding: 10px; /* Padding inside the footer */
+            text-align: center; /* Center text */
+            position: fixed; /* Fixed position */
+            bottom: 0; /* Bottom of the page */
+            width: 100%; /* Full width */
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Website Header</h1>
+    </div>
+    <div class="navigation-bar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="article">
+            <h2>Main Article</h2>
+            <p>This is the main content area where the main article will go.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>This is the sidebar with additional content or links.</p>
+        </div>
+    </div>
+    <div class="footer-container">
+        <p>Footer Content</p>
+    </div>
+</body>
+</html>
