@@ -12,17 +12,18 @@
             <h1> Master of Science in Information Technology</h1>
         </header>
         <!--Navbar-->
-        <nav>
-            <ul class="ulnav">
-                <li class="linav">Overview</li>
-                <li class="linav">Curriculam</li>
-                <li class="linav">Admission Requirments</li>
-                <li class="linav">Contact us</li>
-            </ul>
-        </nav>
-        <section>
+        <section class="bdy">
+            <nav>
+                <ul class="ulnav">
+                    <li class="linav"><a href="#programview" class="hyper">Overview </a></li>
+                    <li class="linav"><a href="#Curriculam" class="hyper">Curriculam </a></li>
+                    <li class="linav"><a href="#Admission" class="hyper">Admission Requirments </a></li>
+                    <li class="linav"><a href="#contcat" class="hyper">Contact us </a></li>
+                </ul>
+            </nav>
+        
             <!--Program View-->
-            <section class="card">
+            <section class="card" id="programview">
               <h1> Program View</h1>
              <p> The MSIT program is designed to quip stydents with the skills and knowledge needed to excel in the field of information technology. Our cirriculum is tailored to meet the needs of both begginers an experinced professionals </p>
              <header>
@@ -31,19 +32,38 @@
             </section>
             <!--Curriculam-->
             <section class="card">
+           
                 <h1> Curriculam</h1>
-                <p> The Curriculam covers a wide range of topics, including</p>
-                <ul>
-                   <li> Data structures and Algorithms</li>
-                   <li> Database Managment Systems</li>
-                   <li> Web devlopment</li>
-                   <li> Cloud Computing</li>
-                   <li> Cyber security</li>
-
-                </ul>
+                <section class="mancirr" id="Curriculam">
+                    <section class="cir"> <h3> Structures and Algorithms</h3>
+                         <p> Learn the foundational concepts of data structures and algorithms to build efficient systems. </p>
+                    </section>
+                    <section class="cir" >
+                         <h3>  Database Managment Systems </h3>
+                         <p> Understand how to design and manage databases using SQL and NoSQL technologies.</p>
+                    </section>
+                    <section class="cir">
+                        <h3> Web devlopment </h3>
+                        <p> Explore front-end back-end technologies to build dynamic, full-stack web applications</p>
+                    </section>
+                    <section class="cir">
+                        <h3> Cloud Computing</h3>
+                        <p> Discover cloud plotforms, virtulization and containerization to deploy scalable application.</p>
+                    </section>
+                    <section class="cir">
+                        <h3> Cyber security </h3>
+                        <p> Learn the essiantls of protecting systems and data from malicious attacks and breaches.</p>
+                    </section>
+                    <section class="cir"> 
+                        <h3> Machine Learning</h3>
+                        <p> Gain Knowledge  in meachine Learning algorithms and how to apply them to real world problems.</p>
+                    </section>
+                    
+                </section>
+               
             </section>
             <!--Admission requirments-->
-            <section class="card">
+            <section class="card" id="Admission">
                 <h1> Admission Requirments</h1>
                 <p> To apply for the MSIT program, you will need:</p>
                 <ul>
@@ -57,18 +77,19 @@
             </section>
 
             <!--Contact US-->
-            <section class="card">
+            <section class="card" id="contcat">
                 <h1> Contact US</h1>
                 <p> If you have any questions, feel free to reach out to us:</p>
                 <p> Email: <a href="" class="email">msit@university.edu</a></p>
                 <p> Phone: (0123)-456-789</p>
             </section>
-        </section>
+     </body>
+   
         <!--Footer-->
         <footer>
             2024 University Name.All rights reserved.
         </footer>
             
         
-    </body>
+    </section>
 </html>
