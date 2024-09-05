@@ -34,7 +34,7 @@ footer{
     padding: 20px;
 }
 .card{
-    background-color: #f2f2f2;
+    background-color: white;
     border-radius: 5px;
     margin: 10px;
     padding: 20px;
@@ -77,4 +77,77 @@ h3{
     background-color: gray;
     
     
+}
+/* .back{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
+    overflow: hidden;
+    align-items: center;
+
+    
+} */
+/* .but{
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+    color: white;
+    
+}
+.wel{
+    color: white;
+}
+.sub{
+    color: white;
+} */
+
+.he {
+    position: relative;
+    background-image: linear-gradient(rgba(16, 10, 10, 0.796), rgba(0, 0, 0, 0.895)), url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.her,h1 {
+    
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero,p {
+    
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #0040df;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0262ff;
 }
