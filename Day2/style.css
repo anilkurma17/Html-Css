@@ -30,7 +30,7 @@ nav {
 footer {
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: center; 
     padding: 20px;
 }
 
@@ -107,7 +107,7 @@ h3 {
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     margin-bottom: 10px;
 }
@@ -125,6 +125,10 @@ h3 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    margin: 10px;
+    
+    
+    
 }
 
 .button:hover {
@@ -169,7 +173,10 @@ h3 {
 }
 .wel{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
+}
+.you{
+    padding: 10px;
 }
 
 .social-media {
@@ -209,3 +216,55 @@ h3 {
     margin-top: 10px;
     line-height: 1.5;
 }
+/* Apply Section */
+.apply-section {
+    width: 50%;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align: left;
+}
+
+.apply-section h1 {
+    text-align: center;
+    color: #df0059;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .application-form label {
+    font-weight: bold;
+} */
+
+.application-form input, .application-form textarea {
+    padding: 10px;
+    /* border-radius: 5px; */
+    border: 1px solid #ccc;
+    /* font-size: 14px; */
+}
+
+.application-form input[type="file"] {
+    padding: 5px;
+}
+
+.application-form .submit-btn {
+    background-color: #df00ab;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    /* transition: background-color 0.3s; */
+}
+
+/* .application-form .submit-btn:hover {
+    background-color: #0262ff;
+} */
