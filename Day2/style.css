@@ -77,7 +77,7 @@ h3 {
     background-color: gray;
 }
 
-.he {
+/* .he {
     position: relative;
     background-image: linear-gradient(rgba(16, 10, 10, 0.796), rgba(0, 0, 0, 0.895)), url('https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png');
     background-size: cover;
@@ -87,8 +87,8 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-}
-
+} */
+/*
 .overlay {
     position: absolute;
     top: 0;
@@ -98,9 +98,9 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.content {
+/* .content {
     text-align: center;
     color: white;
     padding: 20px;
@@ -133,7 +133,7 @@ h3 {
 
 .button:hover {
     background-color: #0262ff;
-}
+} */
 
 .hex-container {
     display: flex;
@@ -268,3 +268,90 @@ h3 {
 /* .application-form .submit-btn:hover {
     background-color: #0262ff;
 } */
+/* Slideshow Container */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+/* Each Slide */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideAnimation 15s infinite; /* Adjust duration as needed */
+    opacity: 0; /* Start with all slides hidden */
+    z-index: 1; /* Base z-index for all slides */
+}
+
+.slide:nth-child(1) {
+    background-image: linear-gradient(rgba(16, 10, 10, 0.796), rgba(0, 0, 0, 0.895)), url('https://static.wixstatic.com/media/bea645_3012ae9a3a5f4192a2b13d09bb210f56~mv2.jpg/v1/fill/w_640,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/bea645_3012ae9a3a5f4192a2b13d09bb210f56~mv2.jpg');
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    background-image: linear-gradient(rgba(16, 10, 10, 0.796), rgba(0, 0, 0, 0.895)), url('https://static.wixstatic.com/media/nsplsh_6f406b46709548eab9ef8c0ac14a2a2d~mv2.jpg/v1/fill/w_825,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_6f406b46709548eab9ef8c0ac14a2a2d~mv2.jpg');
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    background-image: linear-gradient(rgba(16, 10, 10, 0.796), rgba(0, 0, 0, 0.895)),
+    url('https://static.wixstatic.com/media/nsplsh_a2e45a0201244411ba8762daf54e1a01~mv2.jpg/v1/fill/w_1254,h_678,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/nsplsh_a2e45a0201244411ba8762daf54e1a01~mv2.jpg');
+    animation-delay: 10s;
+}
+
+/* Slide Animation */
+@keyframes slideAnimation {
+    0%, 100% { opacity: 0; z-index: 1; } 
+    5%, 30% { opacity: 1; z-index: 2; } 
+    35%, 100% { opacity: 0; z-index: 1; } 
+}
+
+/* Content Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Responsive Text Styling */
+.content {
+    color: white;
+    padding: 20px;
+}
+
+.wel {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.you {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* CTA Button */
+.button {
+    background-color: #0040df;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #0262ff;
+}
+ 
